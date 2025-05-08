@@ -45,7 +45,7 @@ export class LanguageServiceProvider implements ILanguageServiceProvider {
 	}
 
 	async parse(identifier: LanguageIdentifier, input: string) {
-		if (this.isSupportLanguage(identifier)) {
+		if (!this.isSupportLanguage(identifier)) {
 			return;
 		}
 
