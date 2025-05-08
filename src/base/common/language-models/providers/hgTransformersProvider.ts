@@ -3,9 +3,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { chunkArray } from '@langchain/core/utils/chunk_array';
-import {
-	type FeatureExtractionPipeline, // @ts-expect-error vite esm => cjs
-} from '@xenova/transformers';
+// @ts-expect-error vite esm => cjs
+import { type FeatureExtractionPipeline } from '@xenova/transformers';
 import { type CancellationToken } from 'vscode';
 
 import { ConfigurationService } from '../../configuration/configurationService';
