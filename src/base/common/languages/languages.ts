@@ -55,7 +55,7 @@ const SupportLanguagesList: LanguageItem[] = [
 	{ languageId: 'java', fileExts: ['.java'] },
 	{
 		languageId: 'kotlin',
-		fileExts: ['.kt, .kts, .ktm'],
+		fileExts: ['.kt', '.kts', '.ktm'],
 	},
 	{ languageId: 'python', fileExts: ['.py'] },
 	{
