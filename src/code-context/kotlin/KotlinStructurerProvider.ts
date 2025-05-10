@@ -91,7 +91,6 @@ export class KotlinStructurerProvider extends BaseStructurerProvider {
 						interfaceObj.methods = methods.slice();
 						codeFile.classes.push({ ...interfaceObj });
 
-						// 重置字段和方法
 						methods.length = 0;
 						fields.length = 0;
 					}

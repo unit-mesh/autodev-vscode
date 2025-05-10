@@ -69,7 +69,7 @@ export class KotlinProfile implements LanguageProfile {
         )?
 
       (class_declaration
-        (type_identifier) @interface-name
+        (type_identifier) @class-name
         (class_body
           (property_declaration
             (binding_pattern_kind)?
