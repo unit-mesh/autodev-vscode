@@ -35,6 +35,7 @@ import { SpringContextProvider } from './toolchain-context/framework/jvm/SpringC
 import { ToolchainContextProvider } from './toolchain-context/ToolchainContextProvider';
 import { JavaVersionProvider } from './toolchain-context/version/JavaVersionProvider';
 import { AutoMethodActionCreator } from './action/autoMethod/AutoMethodActionCreator';
+import { KotlinStructurerProvider } from "./code-context/kotlin/KotlinStructurerProvider";
 
 // Action Register
 providerContainer.bind(IActionCreator).to(AutoDocActionCreator);
@@ -61,6 +62,7 @@ providerContainer.bind(IRelevantCodeProvider).to(JavaRelevantCodeProvider);
 providerContainer.bind(ITestGenProvider).to(JavaTestGenProvider);
 providerContainer.bind(IBuildToolProvider).to(GradleBuildToolProvider);
 providerContainer.bind(IStructurerProvider).to(JavaStructurerProvider);
+providerContainer.bind(IStructurerProvider).to(KotlinStructurerProvider);
 
 // TypeScript
 providerContainer.bind(IToolchainContextProvider).to(JavaScriptContextProvider);

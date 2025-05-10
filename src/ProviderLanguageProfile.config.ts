@@ -7,6 +7,7 @@ import { RustProfile } from './code-context/rust/RustProfile';
 import { TypeScriptProfile } from './code-context/typescript/TypeScriptProfile';
 import { ILanguageProfile } from './ProviderTypes';
 import { CsharpProfile } from './code-context/csharp/CsharpProfile';
+import { KotlinProfile } from './code-context/kotlin/KotlinProfile';
 
 const languageContainer = new Container();
 
@@ -14,7 +15,8 @@ languageContainer.bind(ILanguageProfile).to(JavaProfile);
 languageContainer.bind(ILanguageProfile).to(TypeScriptProfile);
 languageContainer.bind(ILanguageProfile).to(GolangProfile);
 languageContainer.bind(ILanguageProfile).to(PythonProfile);
-languageContainer.bind(ILanguageProfile).to(CsharpProfile)
+languageContainer.bind(ILanguageProfile).to(CsharpProfile);
 languageContainer.bind(ILanguageProfile).to(RustProfile);
+languageContainer.bind(ILanguageProfile).to(KotlinProfile);
 
 export { languageContainer };
