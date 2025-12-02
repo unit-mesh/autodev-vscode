@@ -17,6 +17,8 @@
 > 🧙‍AutoDev: the AI-powered coding wizard with multilingual support 🌐, auto code generation 🏗️, and a helpful
 > bug-slaying assistant 🐞! Customizable prompts 🎨 and a magic Auto Dev/Testing/Document/Agent feature 🧪 included! 🚀
 
+# Move to https://github.com/unit-mesh/auto-dev with Multiplatform support
+
 JetBrains' IDE Version: [https://github.com/unit-mesh/auto-dev](https://github.com/unit-mesh/auto-dev)
 
 Documentation: [https://vscode.unitmesh.cc/](https://vscode.unitmesh.cc/)
